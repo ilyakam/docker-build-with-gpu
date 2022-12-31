@@ -8,3 +8,7 @@ ADD . .
 RUN pip install -r requirements.txt
 
 RUN python is_cuda_available.py
+
+EXPOSE 8000
+
+CMD python -u server.py
